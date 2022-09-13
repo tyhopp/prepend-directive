@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "Ty Hopp",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fs-extra": "^10.1.0"
   }
