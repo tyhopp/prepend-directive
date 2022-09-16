@@ -7,3 +7,5 @@ Prepend a directive to the top of a file.
 ```shell
 npx prepend-directive@latest --files=file-a.js,file-b.js --directive=\"use strict\"
 ```
+
+Test if CI runs.
