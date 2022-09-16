@@ -9,7 +9,13 @@
   "scripts": {
     "test": "uvu tests --ignore fixtures --bail"
   },
-  "keywords": [],
+  "keywords": [
+    "prepend",
+    "directive",
+    "postbuild",
+    "lifecycle",
+    "hook"
+  ],
   "author": "Ty Hopp",
   "license": "MIT",
   "dependencies": {
