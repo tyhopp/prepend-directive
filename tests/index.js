@@ -2,7 +2,6 @@ const { test } = require(`uvu`);
 const assert = require(`uvu/assert`);
 const { execSync } = require(`child_process`);
 const fs = require(`fs-extra`);
-const sysPath = require(`path`);
 
 const fixtures = [
   {
@@ -18,7 +17,7 @@ const fixtures = [
 const files = fixtures.map((fixture) => fixture.path).join(`,`);
 const directive = `\"use strict\"`;
 
-const command = `npx prepend-directive@latest --files=${files} --directive=${directive}`;
+const command = `node index.js --files=${files} --directive=${directive}`;
 
 test.after(() => {
   for (const { path, originalContent } of fixtures) {
@@ -28,8 +27,7 @@ test.after(() => {
 
 test(`should prepend a directive to files`, () => {
   execSync(command, {
-    stdio: [0, 1, 2],
-    cwd: sysPath.resolve(``),
+    stdio: `inherit`,
   });
 
   for (const { path, originalContent } of fixtures) {
