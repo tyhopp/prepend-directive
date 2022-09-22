@@ -29,13 +29,13 @@ const b = () => `b`;
 file-a.js:
 
 ```js
-"use strict";
+"use strict"
 const a = () => `a`;
 ```
 
 file-b.js:
 
 ```js
-"use strict";
+"use strict"
 const b = () => `b`;
 ```
