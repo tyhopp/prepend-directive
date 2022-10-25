@@ -6,6 +6,9 @@
   "bin": {
     "prepend-directive": "index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "uvu tests --ignore fixtures --bail"
   },
